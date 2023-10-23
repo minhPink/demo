@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .menu {
+            margin: auto;
+            max-width: 0 auto;
+        }
+        .nav {
+            list-style: none;
+            color: aliceblue;
+        }
+        .nav > li:not(:last-child) {
+            border-right: 1px solid rgb(216, 215, 215); /* Thêm gạch trắng ngăn cách */
+            
+        }
+        .nav > li:hover {
+            background: red;
+        }
+        .nav > li{
+            float: left;
+            background: blue;
+            padding: 10px;
+            position: relative;
+            /* border-bottom: 2px solid blue;
+            border-top: 2px solid blue; */
+        }
+        .sub-menu  {
+            list-style: none;
+            display: none;
+            background-color: red;
+            margin-top: 10px;
+            /* text-align: left; */
+            position:absolute;
+            left: -170%;
+            width: 280px;
+            padding: 10px;
+        }
+        .sub-menu li {
+            margin-left: 10px;
+        } 
+         .sub-menu .id {
+            margin-left: 0px; 
+        } 
+        li:hover .sub-menu {
+            display: flex;
+        }
+
+
+        .sub-menu1  {
+            list-style: none;
+            display: none;
+            padding:0;
+            background-color: red;
+            margin-top: 10px;
+            text-align: left;
+            position:absolute;
+            left: 0%;
+            width: 190px;
+            padding: 10px;
+        }
+        li:hover .sub-menu1 {
+            display: flex;
+        }
+        .sub-menu1 li {
+            margin-left: 10px;
+        } 
+        .sub-menu1 .id {
+            margin-left: 0px; 
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul class="nav">
+            <li>
+                Chính trị-xã hội
+                <ul class="sub-menu1">
+                    <li class="id">Chính trị</li>
+                    <li>Xã hội</li>
+                    <li>Nhân văn</li>
+                </ul>
+            </li>
+            <li>
+                Thế giới
+                <ul class="sub-menu">
+                    <li class="id">Thư việ pháp luật</li>
+                    <li>Sống khỏe</li>
+                    <li>Pháp luật</li>
+                </ul>
+            </li>
+            <li>Nhịp sống trẻ</li>
+            <li>Giao dục</li>
+            <li>Kinh t</li>
+        </ul>
+    </nav>
+</body>
+</html>

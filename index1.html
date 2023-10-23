@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: inline-flex;
+            color: #fef9f9;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            background: blue;
+            padding: 10px;
+            position: relative;
+        }
+        .sub-menu {
+            list-style: none;
+            display: none;
+            padding: 0;
+            margin-top: 10px;
+            text-align: left;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            width: 200px;
+            top: -10px;
+        }
+        li:hover {
+            background-color: red; 
+        }
+        li:hover .sub-menu {
+            display: block; 
+        }
+        .sub-menu li {
+            background-color: red; /* Đổi màu nền của danh sách con thành đỏ */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>Chính trị-xã hội
+                <ul class="sub-menu">
+                        <li>Hihi</li>
+                        <li>Hihi</li>
+                        <li>Hihi</li>
+                    </ul>
+                </li>
+                <li>Thế giới
+                    <ul class="sub-menu">
+                        <li>Hihi</li>
+                        <li>Hihi</li>
+                        <li>Hihi</li>
+                    </ul>
+                </li>
+                <li>Nhịp sống trẻ
+                    <ul class="sub-menu">
+                        <li>Hihi</li>
+                        <li>Hihi</li>
+                        <li>Hihi</li>
+                    </ul>
+                </li>
+                <li>Giáo dục
+                    <ul class="sub-menu">
+                        <li>Hihi</li>
+                        <li>Hihi</li>
+                        <li>Hihi</li>
+                    </ul>
+                </li>
+                <li>Kinh tế
+                    <ul class="sub-menu">
+                        <li>Hihi</li>
+                        <li>Hihi</li>
+                        <li>Hihi</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
